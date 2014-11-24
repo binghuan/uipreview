@@ -217,7 +217,10 @@
 							'&frameheight=' + configure.frameheight + '&framewidth=' + configure.framewidth +
 							'&javascript=' + configure.javascript;
 
-				alert(urlPath);
+				//alert(urlPath);
+				$("#link2preview").fadeOut();
+				$("#link2preview").text(urlPath);
+				$("#link2preview").fadeIn();
 			}
 
 			function runJavascriptCode() {
@@ -234,7 +237,7 @@
 	</head>
 		<body style="background-image: url('images/grid.png');">
 		<div>
-			<h3 style="display:inline;padding-right:20px">Welcome to BH_Lin's UI platform</h3><button id="button_share">Share UI Preview</button>
+			<h3 style="display:inline;padding-right:20px">Welcome to BH_Lin's UI platform</h3>
 		</div>
 		<p style="margin-bottom:0px">Enter a website address here: </p>
 		<input id="target_url" type="url" style="width:480px"> <button onclick="loadUrlIntoIframe()">Load</button>
@@ -253,5 +256,9 @@
 			<h3 class="ui-widget-header">ID: frame</h3>
 			<iframe id="frame" style="height:100%;width:100%;"></iframe>
 		</div>
+		<button id="button_share">Share UI Preview</button>
+		<hr>
+			<p id="link2preview">...</p>
+		<hr>
 	</body>
 </html>
