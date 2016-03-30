@@ -1,5 +1,7 @@
 uipreview
 =========
+<img src="Icon.png" width="auto" height="240"><br/>
+
 Link to launch the web app <a href="http://binghuan.github.io/uipreview/">http://binghuan.github.io/uipreview/</a><br/>
 
 Check it out on my blog:
